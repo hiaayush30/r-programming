@@ -85,6 +85,10 @@ smokers = patient_data[patient_data$"smoking" == TRUE,]
 ![alt text](image-12.png)
 
 ---
+### writing to a text file
+```r
+rscript program.r > new.txt
+```
 
 ![alt text](image-23.png)
 ![alt text](image-24.png)
