@@ -72,6 +72,52 @@ patient_data[,c(3,5)]
 
 - storing values of a field as an array
 ![alt text](image-20.png)
+![alt text](image-21.png)
+![alt text](image-22.png)
 
+- using conditions
+```r
+# finding the avg weight of smokers in given dataset
+smokers = patient_data[patient_data$"smoking" == TRUE,]
+```
+![alt text](image-27.png)
+![alt text](image-26.png)
 ![alt text](image-12.png)
 
+---
+
+![alt text](image-23.png)
+![alt text](image-24.png)
+![alt text](image-25.png) 
+- or
+![alt text](image-28.png)
+
+### doing this by importing from excel file
+
+```r
+find.package("readxl") # see if installed
+install.packages("readxl") # install it
+library("readxl")     # load it
+
+sine_data_file = file.choose()
+typeof(sine_data_file) #character
+
+sine_data = read_xlsx(sine_data_file)
+typeof(sine_data) #list
+
+plot(sine_data$"x",sine_data$"y",type="l")
+```
+![alt text](image-29.png)
+- adding new column
+![alt text](image-30.png)
+![alt text](image-31.png)
+
+### writing to new data to excel
+
+```r
+install.packages("writexl")
+library("writexl")
+new_file_path = "path/New Data.xlsx"
+write_xlsx(sine_data,new_file_path)
+```
+![alt text](image-32.png)

@@ -1,7 +1,7 @@
 x <- 0
 
 str_header = paste("x","y")
-print(str_header)
+print(str_header,quote=FALSE)
 
 while (x <= 360) {
   radians <- x * pi / 180
@@ -12,6 +12,6 @@ while (x <= 360) {
     # print(msg)
 
     str_row = paste(x,y)
-    print(str_row)
+    print(str_row,quote=FALSE)
   x <- x + 1
 }
