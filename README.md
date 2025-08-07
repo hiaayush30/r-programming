@@ -51,5 +51,27 @@ library(readxl) # load it
 ![alt text](image-11.png)
 
 ```r
-history() # history all typed commands
+history() # history of all typed commands
 ```
+
+## Operations on data
+![alt text](image-13.png)
+![alt text](image-14.png)
+
+```r
+patient_data[2] # access the 2nd field
+patient_data[,c(3,5)]
+```
+![alt text](image-19.png)
+- accessing 2nd row 4th field
+![alt text](image-17.png)
+- Accessiong specefic row and columns(in order)
+![alt text](image-15.png)
+- Accessiong specefic row and columns(without specefic order)
+![alt text](image-16.png)
+
+- storing values of a field as an array
+![alt text](image-20.png)
+
+![alt text](image-12.png)
+
