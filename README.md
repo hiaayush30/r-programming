@@ -99,7 +99,7 @@ find.package("readxl") # see if installed
 install.packages("readxl") # install it
 library("readxl")     # load it
 
-sine_data_file = file.choose()
+sine_data_file = file.choose() # import-this.xlsx
 typeof(sine_data_file) #character
 
 sine_data = read_xlsx(sine_data_file)
